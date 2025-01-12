@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* height: 100vh; */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.login-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto 1em;
+}
+
+.container {
+  text-align: center;
+}
+
+.form-container {
+  margin-top: 1em;
+}
+
+.form-field {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.2em;
+  margin-left: 6px;
+  color: #6b6b6b;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+.checkbox-container .label {
+  margin: 20px;
+}
+
+.error {
+  color: red;
+  font-size: 0.875em;
+}
+
+.message {
+  margin-top: 1em;
+  color: green;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.text {
+  font-size: small;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.input-text {
+  color: blue;
+  border: 2px solid #a9a3a3;
+  width: 80%;
+  height: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: large;
+}
+
+.next-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #4a4ace;
+  color: white;
+  width: 90%;
+  margin-left: 4px;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  font-size: larger;
+}
