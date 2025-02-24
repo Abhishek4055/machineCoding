@@ -2,11 +2,11 @@ import React from "react";
 
 function Polindrom() {
   const palindrom = (value) => {
-    const length = value.length / 2;
-    for (let i = 0; i <= value.length; i++) {
-      if (value[i] !== value[value.length - 1 - i]) return "Not a Polindrom";
+    const length = Math.floor(value.length / 2);
+    for (let i = 0; i < length; i++) {
+      if (value[i] !== value[value.length - 1 - i]) return "Not a Palindrome";
     }
-    return " This is a Polindrom";
+    return "This is a Palindrome";
   };
 
   // console.log(palindrom("abcdcba"));

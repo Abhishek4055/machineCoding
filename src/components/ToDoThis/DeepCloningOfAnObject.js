@@ -38,3 +38,45 @@ function DeepCloningOfAnObject() {
 }
 
 export default DeepCloningOfAnObject;
+
+// this function clone all thpe of data from an object
+
+function deepClone(obj) {
+  if (obj === null || typeof obj !== "object") {
+    return obj; // Return primitive values & functions as-is
+  }
+
+  if (obj instanceof Date) {
+    return new Date(obj); // Handle Date objects
+  }
+
+  if (obj instanceof Array) {
+    return obj.map(deepClone); // Deep copy arrays
+  }
+
+  if (obj instanceof Function) {
+    return obj.bind({}); // Clone function (bind to prevent reference issues)
+  }
+
+  const clone = {};
+  for (let key in obj) {
+    if (obj.hasOwnProperty(key)) {
+      clone[key] = deepClone(obj[key]); // Recursively copy properties
+    }
+  }
+  return clone;
+}
+
+const obj = {
+  a: 1,
+  b: { c: 2 },
+  greet() {
+    return "Hello";
+  },
+};
+
+const copy = deepClone(obj);
+
+console.log(copy.greet()); // "Hello"
+copy.b.c = 20;
+console.log(obj.b.c); // 2 (original remains unchanged)

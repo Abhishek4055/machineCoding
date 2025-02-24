@@ -1,6 +1,17 @@
 .app {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  font-family: sans-serif;
+  text-align: center;
+  border: 1px solid black;
+  display: grid;
+}
+
+.box {
+  height: 0;
+  padding-bottom: 100%;
+  border: 1px solid black;
+}
+
+.odd {
+  background-color: black;
+  color: white;
 }

@@ -20,7 +20,7 @@ const ValidParenthesis = () => {
         }
         default: {
           const popedElement = arr.pop();
-          if (popedElement !== val[i]) return false;
+          if (popedElement !== i) return false;
         }
       }
     }

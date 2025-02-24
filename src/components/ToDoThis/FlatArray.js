@@ -6,7 +6,7 @@ function FlatArray() {
   const flat = (val, newArr = []) => {
     for (let el of val) {
       if (Array.isArray(el)) {
-        newArr.push(...flat(el, []));
+        flat(el, newArr);
       } else {
         newArr.push(el);
       }

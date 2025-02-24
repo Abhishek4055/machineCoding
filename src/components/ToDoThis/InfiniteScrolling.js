@@ -16,7 +16,6 @@ const InfiniteScrolling = () => {
         `https://dummyjson.com/posts?limit=${PAGE_SIZE}&skip=${firstIndex}`
       );
       const data = await response.json();
-
       setTableData((prevCache) => [...prevCache, ...data.posts]);
     } catch (error) {
       console.log(error);
