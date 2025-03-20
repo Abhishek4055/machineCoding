@@ -19,7 +19,6 @@ function AllSelectCheckbox() {
 
   const checkBoxHandler = (e) => {
     const { name, checked } = e.target;
-
     if (name === "all") {
       const allCheck = myData?.map((user) => ({ ...user, isChecked: checked }));
       setMyData(allCheck);

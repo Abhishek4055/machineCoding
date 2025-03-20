@@ -1,5 +1,5 @@
 import React from "react";
-
+// two word which have same element
 function Anagram() {
   const anagram = (str1, str2) => {
     const newString1 = str1
