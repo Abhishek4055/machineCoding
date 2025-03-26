@@ -9,7 +9,7 @@ body {
 }
 
 /* Dark Mode */
-body.dark-mode {
+.dark {
   background-color: #121212;
   color: white;
 }
@@ -24,7 +24,7 @@ body.dark-mode {
   border-radius: 5px;
   transition: 0.3s;
 }
-.dark-mode .toggle-button {
+.dark .toggle-button {
   background-color: gray;
   color: white;
 }

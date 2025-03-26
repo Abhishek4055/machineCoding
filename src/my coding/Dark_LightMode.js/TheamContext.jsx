@@ -6,18 +6,7 @@ export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState("light");
 
   useEffect(() => {
-    // Check if there is a saved theme in localStorage
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-  }, []);
-
-  useEffect(() => {
-    // Update body class based on the theme
-    document.body.className = theme; // Set the class on body
-    // Persist the theme to localStorage
-    localStorage.setItem("theme", theme);
+    document.body.className = theme;
   }, [theme]);
 
   // Toggle theme between light and dark
