@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import FindSetOfAnagram from "./my coding/components/ToDoThis/FindSetOfAnagram";
 import ThemeToggle from "./my coding/Dark_LightMode.js/TheamTogal";
-import MaximumProductOfTwoNumber from "./my coding/components/ToDoThis/MaximumProductOfTwoNumber";
+import ProductOfTwoMaximumNumber from "./my coding/components/ToDoThis/ProductOfTwoMaximumNumber";
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
         <ThemeToggle />
       </div>
       <FindSetOfAnagram />
-      <MaximumProductOfTwoNumber />
+      <ProductOfTwoMaximumNumber />
     </div>
   );
 }

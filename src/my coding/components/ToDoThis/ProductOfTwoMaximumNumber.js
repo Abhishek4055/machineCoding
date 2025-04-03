@@ -1,6 +1,6 @@
 import React from "react";
 
-const MaximumProductOfTwoNumber = () => {
+const ProductOfTwoMaximumNumber = () => {
   const input1 = [1, 2, 3, 4, 5];
   const input2 = [-7, -2, 3, -5, 10];
   const input3 = [1, 1, 1];
@@ -72,4 +72,4 @@ const MaximumProductOfTwoNumber = () => {
   );
 };
 
-export default MaximumProductOfTwoNumber;
+export default ProductOfTwoMaximumNumber;
