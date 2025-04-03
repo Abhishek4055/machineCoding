@@ -1,6 +1,6 @@
 .app {
   font-family: sans-serif;
-  text-align: center;
+  /* text-align: center; */
   border: 1px solid black;
   display: grid;
 }
@@ -13,12 +13,12 @@
 
 .odd {
   background-color: black;
-  color: white;
+  color: rgb(231, 231, 231);
 }
 
 .button_layout {
   padding: 10px;
   display: flex;
   gap: 10px;
-  justify-content: center;
+  /* justify-content: center; */
 }

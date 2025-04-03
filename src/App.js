@@ -1,15 +1,15 @@
 import React from "react";
-import { ThemeProvider } from "./my coding/Dark_LightMode.js/TheamContext";
-import ThemeToggle from "./my coding/Dark_LightMode.js/TheamTogal";
 import "./App.css";
+import FindSetOfAnagram from "./my coding/components/ToDoThis/FindSetOfAnagram";
+import ThemeToggle from "./my coding/Dark_LightMode.js/TheamTogal";
 
 export default function App() {
   return (
-    <ThemeProvider>
-      <div className="container">
+    <div className="container">
+      <div>
         <ThemeToggle />
-        <h1>Hii... !</h1>
       </div>
-    </ThemeProvider>
+      <FindSetOfAnagram />
+    </div>
   );
 }
