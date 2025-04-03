@@ -5,6 +5,8 @@ function FindSetOfAnagram() {
 
   function outPut(arr) {
     if (!arr.length) return "No Item found";
+    if (arr.length === 1) return arr;
+
     let result = new Map();
 
     for (let item of arr) {
